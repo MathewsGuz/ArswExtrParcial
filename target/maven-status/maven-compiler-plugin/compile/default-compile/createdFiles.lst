@@ -1,0 +1,8 @@
+com\mycompany\movies\connection\HttpConnection.class
+com\mycompany\movies\connection\omdbapi.class
+com\mycompany\movies\connection\Provider.class
+com\mycompany\movies\Main.class
+com\mycompany\movies\restcontrollers\MoviesAPIController.class
+com\mycompany\movies\services\MovieService.class
+com\mycompany\movies\services\MoviesServicesException.class
+com\mycompany\movies\services\MovieServi.class

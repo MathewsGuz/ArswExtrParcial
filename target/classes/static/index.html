@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Movie Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 class="cover-heading">Movie search by title and year</h1>
+        <div>This Page will allow you to search any movie stored in omdbapi.com</div>
+        <br>
+        Title:<input id="movie" type="text" name="movie name" >
+        Year:<input id="date" type="text" name="movie year"><br>
+        <br>
+        
+        <button type="button" value="F" onclick="MovieConsultController.ShowMovie()">Search!</button>
+        <table style="width:100%" id="List">
+            <tr>
+              <th>Tittle</th>
+              <th>Description</th>
+              <th>Poster</th> 
+            </tr>
+        </table>
+        <p id="respuesta" ></p>
+        
+         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/MovieRestController.js"></script>
+        <script src="js/MovieController.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </body>
+</html>
